@@ -7,6 +7,12 @@ phrase across the weeks of a calendar year and generates backdated, empty
 commits at the exact grid positions, so the text appears as colored cells on
 your GitHub profile.
 
+## Demo
+
+<video src="./docs/demo.mp4" controls="controls" style="max-width: 100%;">
+  <a href="./docs/demo.mp4">Watch the demo video</a>
+</video>
+
 ## Install
 
 ```sh
