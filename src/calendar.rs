@@ -66,6 +66,16 @@ impl YearGrid {
     pub fn drawable_cells(&self) -> impl Iterator<Item = &Cell> {
         self.cells.iter().filter(|c| c.in_target_year)
     }
+
+    pub fn cell_in_target_year(&self, week: usize, day: usize) -> bool {
+        if week >= self.week_count || day > 6 {
+            return false;
+        }
+        self.cells
+            .get(week * 7 + day)
+            .map(|c| c.in_target_year)
+            .unwrap_or(false)
+    }
 }
 
 fn weekday_index(weekday: Weekday) -> usize {
