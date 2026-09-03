@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitpixel"
+version = "0.1.0"
+description = "Draw ASCII text on your GitHub contribution graph using backdated commits"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Smasduq" }]
+keywords = ["github", "contribution", "graph", "backdate", "commits"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://crates.io/crates/gitpixel"
+Repository = "https://github.com/Smasduq/git-pixel.git"
+
+[project.scripts]
+gitpixel = "gitpixel_py.cli:main"
+
+[tool.setuptools]
+packages = ["gitpixel_py"]

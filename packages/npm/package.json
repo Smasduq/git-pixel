@@ -1,0 +1,24 @@
+{
+  "name": "gitpixel",
+  "version": "0.1.0",
+  "description": "Draw ASCII text on your GitHub contribution graph using backdated commits",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Smasduq/git-pixel.git"
+  },
+  "homepage": "https://crates.io/crates/gitpixel",
+  "bin": {
+    "gitpixel": "bin/gitpixel.js"
+  },
+  "files": [
+    "bin",
+    "scripts"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

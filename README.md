@@ -15,9 +15,22 @@ your GitHub profile.
 
 ## Install
 
+gitpixel is a Rust binary, so it installs the same from any of these package
+managers — pick whichever you use:
+
 ```sh
+# Rust / Cargo
 cargo install gitpixel
+
+# Node / npm
+npm install -g gitpixel
+
+# Python / pip
+pip install gitpixel
 ```
+
+All three deliver the same `gitpixel` executable. The npm and pip packages download
+a prebuilt binary for your OS from GitHub Releases, so no Rust toolchain is needed.
 
 ## Usage
 
