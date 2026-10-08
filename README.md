@@ -78,6 +78,8 @@ state, so your own work is never clobbered.
    level, all stamped at noon UTC, so history stays linear and lands exactly
    where the graph expects it.
 
+Made by Smasduq
+
 ## License
 
 MIT
